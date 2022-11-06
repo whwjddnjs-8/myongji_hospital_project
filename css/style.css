@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Common */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
@@ -56,6 +57,10 @@ a {
   margin-top: 90px !important;
 }
 
+.mt200 {
+  margin-top: 200px !important;
+}
+
 .h10 {
   height: 10%;
 }
@@ -97,7 +102,7 @@ a {
 }
 
 .mb200 {
-  margin-bottom: 200px !important;
+  margin-bottom: 500px !important;
 }
 
 .pb200 {
@@ -135,6 +140,30 @@ a {
   height: 12px !important;
   border-radius: 8px !important;
   background: #049DD9 !important;
+}
+
+.bg_primary {
+  background-color: #049DD9 !important;
+}
+
+.bg_secondary {
+  background-color: #023373 !important;
+}
+
+.bg_third {
+  background-color: #0088CC !important;
+}
+
+.bg_fourth {
+  background-color: #666BD4 !important;
+}
+
+.bg_fifth {
+  background-color: #2CA48F !important;
+}
+
+.bg_sixth {
+  background-color: #2CA46A !important;
 }
 
 * {
@@ -431,12 +460,321 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 /* Goggle Web Font */
 /* font awesome */
 /* XEIcon */
+/* Footer까지 합한 body */
+.body-wrapper {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+/* body만 안에 content만 포함 */
 .body-content {
   width: 1420px;
   margin: 0 auto;
 }
 
+/* Slide Area */
+.banner_area {
+  margin-bottom: 36px;
+}
 .banner_area .swiper-slide img {
   width: 100%;
   height: 467px;
+}
+
+/* 빠른메뉴 Area */
+.fast-menu-area {
+  width: 1136px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+.fast-menu-area .menu {
+  width: 260px;
+  height: 260px;
+  color: #fff;
+  background-color: #049DD9;
+  padding: 20px 19px;
+  border: 4px solid transparent;
+}
+.fast-menu-area .menu h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.fast-menu-area .menu p {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 56px;
+}
+.fast-menu-area .menu > a {
+  display: inline-block;
+  width: 129px;
+  height: 39px;
+  padding: 0 13px;
+  float: right;
+  color: #555555;
+  text-align: left;
+  border: 1px solid #fff;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 37px;
+  position: relative;
+  font-weight: normal;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.fast-menu-area .menu > a:after {
+  content: "\e93e";
+  font-family: xeicon;
+  position: absolute;
+  right: 5px;
+  top: 1px;
+}
+.fast-menu-area .menu > a:hover {
+  border: 1px solid transparent;
+  background-color: #555;
+  color: #fff;
+}
+.fast-menu-area .menu.bg_white {
+  background-color: #fff !important;
+  color: #555555;
+  border: 4px solid #EEEEEE;
+}
+.fast-menu-area .menu.bg_white h3 {
+  text-align: center;
+}
+.fast-menu-area .menu.bg_white .img_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fast-menu-area .menu.bg_white img {
+  margin-top: 18px;
+  width: 153px;
+  height: 153px;
+}
+.fast-menu-area .menu.span2 {
+  grid-column: 3/span 2;
+  width: 556px;
+}
+.fast-menu-area .menu.span3 {
+  grid-column: 1/span 3;
+  width: 850px;
+}
+.fast-menu-area .menu.slide {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.fast-menu-area .menu.slide > img {
+  width: 12px;
+  cursor: pointer;
+}
+.fast-menu-area .menu.slide .image_gallery {
+  width: 456px;
+  height: 258px;
+  position: relative;
+  overflow: hidden;
+}
+.fast-menu-area .menu.slide .image_gallery .content_area {
+  width: 1368px;
+  height: 258px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.fast-menu-area .menu.slide .image_gallery .content_area img {
+  width: 456px;
+  height: 258px;
+}
+.fast-menu-area .menu .tel_numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.fast-menu-area .menu .tel_numbers .tel {
+  padding: 18px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fast-menu-area .menu .tel_numbers .tel img {
+  width: 70px;
+  height: 70px;
+}
+.fast-menu-area .menu .tel_numbers .tel h3 {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #555555;
+}
+.fast-menu-area .menu .tel_numbers .tel h3 span {
+  margin-top: 8px;
+  display: block;
+  font-size: 20px;
+}
+
+/* 빠른 페이지 이동 Area */
+.goto_menu {
+  border: 4px solid #eeeeee;
+  width: 1136px;
+  margin: auto;
+  margin-top: 44px;
+}
+.goto_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 25px;
+}
+.goto_menu ul li {
+  position: relative;
+  border-right: 4px solid #eeeeee;
+  padding: 0 7px;
+}
+.goto_menu ul li:last-child {
+  border-right: none;
+}
+.goto_menu ul li a {
+  font-size: 16px;
+  color: #555555;
+}
+
+.tab_area {
+  border: 4px solid #eeeeee;
+  width: 1136px;
+  margin: auto;
+  margin-top: 44px;
+  padding: 28px 57px;
+}
+.tab_area .btn_area {
+  margin-bottom: 29px;
+}
+.tab_area .btn_area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tab_area .btn_area ul li {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 31px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.tab_area .btn_area ul li.active {
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  color: #049DD9;
+}
+.tab_area .btn_area ul li:hover {
+  color: #049DD9;
+}
+.tab_area .news_area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  height: 269px;
+}
+.tab_area .news_area .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tab_area .news_area .news img {
+  width: 183px;
+  height: 127px;
+}
+.tab_area .news_area .news .text_area {
+  margin: auto;
+  margin-left: 13px;
+}
+.tab_area .news_area .news .text_area .title {
+  font-weight: 500;
+  font-size: 20px;
+}
+.tab_area .news_area .news .text_area p {
+  font-size: 17px;
+  font-weight: normal;
+  color: #777777;
+}
+.tab_area .class_area,
+.tab_area .media_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 61px;
+  height: 269px;
+}
+.tab_area .class_area .class img,
+.tab_area .class_area .media img,
+.tab_area .media_area .class img,
+.tab_area .media_area .media img {
+  width: 303px;
+  height: 207px;
+}
+.tab_area .class_area .class p,
+.tab_area .class_area .media p,
+.tab_area .media_area .class p,
+.tab_area .media_area .media p {
+  margin-top: 17px;
+}
+
+.come_to_hospital {
+  width: 1136px;
+  margin: auto;
+  margin-top: 44px;
+  margin-bottom: 354px;
+}
+.come_to_hospital h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #555555;
+}
+.come_to_hospital > p {
+  font-size: 18px;
+  color: #777777;
+  margin-top: 5px;
+}
+.come_to_hospital .come_to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+  margin-top: 45px;
+}
+.come_to_hospital .come_to p {
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
 }

@@ -52,6 +52,10 @@ a {
     margin-top: 90px !important;
 }
 
+.mt200 {
+    margin-top: 200px !important;
+}
+
 .h10 {
     height: 10%;
 }
@@ -93,7 +97,7 @@ a {
 }
 
 .mb200 {
-    margin-bottom: 200px !important;
+    margin-bottom: 500px !important;
 }
 
 .pb200 {
@@ -131,4 +135,28 @@ a {
     height: 12px !important;
     border-radius: 8px !important;
     background: $primary_color !important;
+}
+
+.bg_primary {
+    background-color: $primary_color !important;
+}
+
+.bg_secondary {
+    background-color: $secondary_color !important;
+}
+
+.bg_third {
+    background-color: $third_color !important;
+}
+
+.bg_fourth {
+    background-color: $fourth_color !important;
+}
+
+.bg_fifth {
+    background-color: $fifth_color !important;
+}
+
+.bg_sixth {
+    background-color: $sixth_color !important;
 }
