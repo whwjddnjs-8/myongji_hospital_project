@@ -2,6 +2,10 @@ header {
     width: 100%;
     background-color: #fff;
     height: 140px;
+
+    @media (max-width : 765px) {
+        height: 100px;
+    }
 }
 
 .top-header {
@@ -10,11 +14,36 @@ header {
     border-bottom: 1px solid #EEEEEE;
     position: relative;
 
+    @media (max-width : 765px) {
+        height: 50px;
+    }
+
     .logo-area {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    /* Mobile & Pad */
+    @media (max-width : 1400px) {
+        .logo-area {
+            left: 80px;
+            transform: translateY(-50%);
+        }
+    }
+
+    @media (max-width : 765px) {
+        .logo-area {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // transform: translateX(-50%);
+        }
+
+        .logo-area img {
+            width: 100px;
+        }
     }
 
     .language-area {
@@ -41,6 +70,10 @@ header {
                 }
             }
         }
+
+        @media (max-width : 765px) {
+            display: none !important;
+        }
     }
 }
 
@@ -52,6 +85,10 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+
+    @media (max-width : 765px) {
+        height: 50px;
+    }
 
     .menu-icon-area {
         position: relative;
@@ -84,6 +121,58 @@ header {
             font-weight: 500;
         }
     }
+
+    /* Pad */
+    @media (min-width : 766px) and (max-width : 1400px) {
+        .menu-area {
+            ul {
+                font-size: 17px;
+                gap: 60px;
+            }
+        }
+    }
+
+    /* Mobile */
+    @media (max-width : 765px) {
+        justify-content: space-between !important;
+
+        .menu-icon-area {
+            span {
+                width: 20px;
+                height: 1px;
+                background-color: #777777;
+                display: inline-block;
+                top: -6px;
+                left: 0;
+
+                &:nth-child(2) {
+                    top: 0;
+                }
+
+                &:nth-child(3) {
+                    top: 6px;
+                }
+            }
+        }
+
+        .menu-area {
+            display: none !important;
+        }
+
+        .search-icon-area {
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .search-icon-area {
+        img {
+            cursor: pointer;
+        }
+    }
+
+
 }
 
 .sub-menu-area {

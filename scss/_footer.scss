@@ -1,5 +1,5 @@
 footer {
-    background-color: #999999;
+    background-color: #c9c9c9;
     padding: 63px 86px;
     width: 100%;
     position: absolute;
@@ -18,6 +18,7 @@ footer {
 
         .link {
             display: flex;
+            flex-wrap: wrap;
 
             li {
                 margin-right: 10px;
@@ -55,6 +56,8 @@ footer {
                 }
             }
 
+
+
             .image-area {
                 margin-top: 5px;
 
@@ -84,4 +87,88 @@ footer {
 
         }
     }
+}
+
+/* Pad */
+@media (min-width : 766px) and (max-width : 1400px) {
+    footer {
+        height: 350px !important;
+        font-size: 15px !important;
+    }
+
+    footer .info {
+        display: block !important;
+    }
+
+    .image-area {
+        margin-top: 20px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width : 765px) {
+    footer {
+        height: 300px !important;
+        font-size: 15px !important;
+        // padding-top: 80px !important;
+        padding: 8px 20px;
+
+        .footer-area {
+            .link {
+                li {
+                    border-right: none;
+                    margin-right: 10px;
+                    padding-right: 11px;
+                    font-size: 13px !important;
+
+                    a {
+                        color: #fff;
+                    }
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+
+            .info {
+                display: block !important;
+
+                .info-area {
+                    p {
+                        margin: 0;
+                        margin-top: 8px;
+                        font-size: 12px !important;
+                    }
+                }
+
+
+
+                .image-area {
+                    float: right;
+                    margin-top: 20px !important;
+
+                    a {
+                        &:nth-child(1) {
+                            img {
+                                width: 146px;
+                                margin-right: 10px;
+                            }
+                        }
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            img {
+                                width: 32px;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+
 }

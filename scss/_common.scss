@@ -119,6 +119,20 @@ a {
     background-size: 53px 53px !important;
 }
 
+@media (max-width : 765px) {
+    .swiper-button-prev {
+        width: 40px !important;
+        height: 40px !important;
+        background-size: 33px 33px !important;
+    }
+
+    .swiper-button-next {
+        width: 40px !important;
+        height: 40px !important;
+        background-size: 33px 33px !important;
+    }
+}
+
 .swiper-pagination {
     bottom: 22px !important;
 }
