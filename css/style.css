@@ -996,7 +996,7 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 
 @media (max-width: 765px) {
   .tab_area {
-    padding: 8px 15px !important;
+    padding: 8px 10px !important;
   }
   .tab_area .btn_area ul li {
     font-size: 12px !important;
