@@ -87,7 +87,6 @@ $(function () {
     })
 
     /* Search Area */
-    $('.search_area').hide()
     $('.search-icon-area img').click(function () {
         $('.search_area').fadeIn()
     })

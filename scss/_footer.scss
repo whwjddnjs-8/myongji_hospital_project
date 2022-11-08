@@ -56,7 +56,9 @@ footer {
                 }
             }
 
-
+            @media (min-width : 766px) and (max-width : 1400px) {
+                display: block;
+            }
 
             .image-area {
                 margin-top: 5px;
@@ -83,34 +85,27 @@ footer {
                     }
                 }
 
+                @media (min-width : 766px) and (max-width : 1400px) {
+                    margin-top: 20px !important;
+                }
             }
 
         }
     }
-}
 
-/* Pad */
-@media (min-width : 766px) and (max-width : 1400px) {
-    footer {
-        height: 350px !important;
-        font-size: 15px !important;
-    }
-
-    footer .info {
-        display: block !important;
-    }
-
-    .image-area {
-        margin-top: 20px !important;
+    /* Pad */
+    @media (min-width : 766px) and (max-width : 1400px) {
+        height: 350px;
+        font-size: 15px;
     }
 }
+
 
 /* Mobile */
 @media (max-width : 765px) {
     footer {
-        height: 300px !important;
-        font-size: 15px !important;
-        // padding-top: 80px !important;
+        height: 300px;
+        font-size: 15px;
         padding: 8px 20px;
 
         .footer-area {
@@ -119,7 +114,7 @@ footer {
                     border-right: none;
                     margin-right: 10px;
                     padding-right: 11px;
-                    font-size: 13px !important;
+                    font-size: 13px;
 
                     a {
                         color: #fff;
@@ -132,13 +127,13 @@ footer {
             }
 
             .info {
-                display: block !important;
+                display: block;
 
                 .info-area {
                     p {
                         margin: 0;
                         margin-top: 8px;
-                        font-size: 12px !important;
+                        font-size: 12px;
                     }
                 }
 
@@ -146,7 +141,7 @@ footer {
 
                 .image-area {
                     float: right;
-                    margin-top: 20px !important;
+                    margin-top: 20px;
 
                     a {
                         &:nth-child(1) {
@@ -155,20 +150,16 @@ footer {
                                 margin-right: 10px;
                             }
                         }
+
                         &:nth-child(2),
                         &:nth-child(3) {
                             img {
                                 width: 32px;
                             }
-
                         }
                     }
-
                 }
-
             }
         }
     }
-
-
 }

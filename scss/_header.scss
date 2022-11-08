@@ -38,7 +38,6 @@ header {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            // transform: translateX(-50%);
         }
 
         .logo-area img {
@@ -72,7 +71,7 @@ header {
         }
 
         @media (max-width : 765px) {
-            display: none !important;
+            display: none;
         }
     }
 }
@@ -85,10 +84,6 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-
-    @media (max-width : 765px) {
-        height: 50px;
-    }
 
     .menu-icon-area {
         position: relative;
@@ -120,11 +115,9 @@ header {
             color: #333;
             font-weight: 500;
         }
-    }
 
-    /* Pad */
-    @media (min-width : 766px) and (max-width : 1400px) {
-        .menu-area {
+        /* Pad */
+        @media (min-width : 766px) and (max-width : 1400px) {
             ul {
                 font-size: 17px;
                 gap: 60px;
@@ -132,9 +125,12 @@ header {
         }
     }
 
+
+
     /* Mobile */
     @media (max-width : 765px) {
-        justify-content: space-between !important;
+        justify-content: space-between;
+        height: 50px;
 
         .menu-icon-area {
             span {
@@ -156,7 +152,7 @@ header {
         }
 
         .menu-area {
-            display: none !important;
+            display: none;
         }
 
         .search-icon-area {

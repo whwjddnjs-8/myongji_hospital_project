@@ -284,7 +284,7 @@ header {
 }
 @media (max-width: 765px) {
   .top-header .language-area {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -301,13 +301,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  /* Pad */
   /* Mobile */
-}
-@media (max-width: 765px) {
-  .bottom-header {
-    height: 50px;
-  }
 }
 .bottom-header .menu-icon-area {
   position: relative;
@@ -327,6 +321,9 @@ header {
 .bottom-header .menu-icon-area span:nth-child(3) {
   top: 9px;
 }
+.bottom-header .menu-area {
+  /* Pad */
+}
 .bottom-header .menu-area ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,9 +341,10 @@ header {
 }
 @media (max-width: 765px) {
   .bottom-header {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
   }
   .bottom-header .menu-icon-area span {
     width: 20px;
@@ -363,7 +361,7 @@ header {
     top: 6px;
   }
   .bottom-header .menu-area {
-    display: none !important;
+    display: none;
   }
   .bottom-header .search-icon-area img {
     width: 20px;
@@ -487,6 +485,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Pad */
 }
 footer .footer-area {
   width: 100%;
@@ -534,6 +533,11 @@ footer .footer-area .info .info-area p {
 footer .footer-area .info .info-area p span {
   display: block;
 }
+@media (min-width: 766px) and (max-width: 1400px) {
+  footer .footer-area .info {
+    display: block;
+  }
+}
 footer .footer-area .info .image-area {
   margin-top: 5px;
 }
@@ -547,32 +551,30 @@ footer .footer-area .info .image-area a:nth-child(1) img {
 footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .info .image-area a:nth-child(3) img {
   width: 62px;
 }
-
-/* Pad */
 @media (min-width: 766px) and (max-width: 1400px) {
-  footer {
-    height: 350px !important;
-    font-size: 15px !important;
-  }
-  footer .info {
-    display: block !important;
-  }
-  .image-area {
+  footer .footer-area .info .image-area {
     margin-top: 20px !important;
   }
 }
+@media (min-width: 766px) and (max-width: 1400px) {
+  footer {
+    height: 350px;
+    font-size: 15px;
+  }
+}
+
 /* Mobile */
 @media (max-width: 765px) {
   footer {
-    height: 300px !important;
-    font-size: 15px !important;
+    height: 300px;
+    font-size: 15px;
     padding: 8px 20px;
   }
   footer .footer-area .link li {
     border-right: none;
     margin-right: 10px;
     padding-right: 11px;
-    font-size: 13px !important;
+    font-size: 13px;
   }
   footer .footer-area .link li a {
     color: #fff;
@@ -581,16 +583,16 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
     border-right: none;
   }
   footer .footer-area .info {
-    display: block !important;
+    display: block;
   }
   footer .footer-area .info .info-area p {
     margin: 0;
     margin-top: 8px;
-    font-size: 12px !important;
+    font-size: 12px;
   }
   footer .footer-area .info .image-area {
     float: right;
-    margin-top: 20px !important;
+    margin-top: 20px;
   }
   footer .footer-area .info .image-area a:nth-child(1) img {
     width: 146px;
@@ -623,17 +625,17 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
   width: 100%;
   height: 467px;
 }
-
 @media (min-width: 766px) and (max-width: 1400px) {
-  .swiper-slide img {
-    height: 307px !important;
+  .banner_area .swiper-slide img {
+    height: 307px;
   }
 }
 @media (max-width: 765px) {
-  .swiper-slide img {
-    height: 157px !important;
+  .banner_area .swiper-slide img {
+    height: 157px;
   }
 }
+
 /* 빠른메뉴 Area */
 .fast-menu-area {
   width: 90%;
@@ -725,8 +727,18 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 .fast-menu-area .menu.span2 {
   width: 46%;
 }
+@media (min-width: 766px) and (max-width: 1400px) {
+  .fast-menu-area .menu.span2 {
+    display: none !important;
+  }
+}
 .fast-menu-area .menu.span3 {
   width: 72.5%;
+}
+@media (min-width: 766px) and (max-width: 1400px) {
+  .fast-menu-area .menu.span3 {
+    display: none;
+  }
 }
 .fast-menu-area .menu.slide {
   background-color: #fff;
@@ -802,24 +814,18 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 }
 @media (min-width: 766px) and (max-width: 1400px) {
   .fast-menu-area .menu {
-    width: 48% !important;
-  }
-  .fast-menu-area .span2 {
-    display: none !important;
-  }
-  .fast-menu-area .span3 {
-    display: none;
+    width: 48%;
   }
 }
 
 /* Mobile */
 @media (max-width: 765px) {
   .fast-menu-area {
-    width: 100% !important;
-    gap: 5px !important;
+    width: 100%;
+    gap: 5px;
   }
   .fast-menu-area .menu {
-    width: 48% !important;
+    width: 48%;
     padding: 15px 10px;
     height: 160px;
   }
@@ -833,7 +839,7 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
   .fast-menu-area .menu > a {
     width: 70px;
     height: 20px;
-    padding: 0px 5px !important;
+    padding: 0px 5px;
     color: #555555;
     font-size: 10px;
     line-height: 17px;
@@ -848,10 +854,10 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
     height: 83px;
   }
   .fast-menu-area .menu.span2 {
-    display: none !important;
+    display: none;
   }
   .fast-menu-area .menu.span3 {
-    display: none !important;
+    display: none;
   }
 }
 /* 빠른 페이지 이동 Area */
@@ -884,12 +890,12 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 
 @media (max-width: 765px) {
   .goto_menu ul {
-    display: block !important;
+    display: block;
     text-align: center;
   }
   .goto_menu ul li {
-    margin-top: 3px !important;
-    border-right: none !important;
+    margin-top: 3px;
+    border-right: none;
   }
 }
 .tab_area {
@@ -996,42 +1002,46 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 
 @media (max-width: 765px) {
   .tab_area {
-    padding: 8px 10px !important;
+    padding: 8px 10px;
   }
   .tab_area .btn_area ul li {
-    font-size: 12px !important;
+    font-size: 12px;
   }
   .tab_area .news_area {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr);
   }
   .tab_area .news_area .news img {
     width: 33%;
     height: 79px;
   }
-  .tab_area .news_area .text_area .title {
-    font-size: 14px !important;
+  .tab_area .news_area .news .text_area .title {
+    font-size: 14px;
   }
-  .tab_area .news_area .text_area p {
-    font-size: 12px !important;
+  .tab_area .news_area .news .text_area p {
+    font-size: 12px;
   }
   .tab_area .class_area,
 .tab_area .media_area {
     grid-template-columns: repeat(1, 1fr) !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    gap: 20px !important;
-    text-align: center !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    text-align: center;
   }
-  .tab_area .class_area img,
-.tab_area .media_area img {
-    width: 40% !important;
-    height: 107px !important;
+  .tab_area .class_area .class img,
+.tab_area .class_area .media img,
+.tab_area .media_area .class img,
+.tab_area .media_area .media img {
+    width: 40%;
+    height: 107px;
   }
-  .tab_area .class_area p,
-.tab_area .media_area p {
-    margin-top: 8px !important;
-    font-size: 13px !important;
+  .tab_area .class_area .class p,
+.tab_area .class_area .media p,
+.tab_area .media_area .class p,
+.tab_area .media_area .media p {
+    margin-top: 8px;
+    font-size: 13px;
   }
 }
 /* Pad */
@@ -1094,13 +1104,15 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
   color: #999999;
 }
 
-/* Mobile & Pad */
 @media (min-width: 766px) and (max-width: 1400px) {
-  .come_to p {
-    font-size: 15px;
-  }
   .come_to_hospital {
-    margin-bottom: 450px !important;
+    margin-bottom: 450px;
+  }
+  .come_to_hospital .come_to {
+    margin-top: 20px;
+  }
+  .come_to_hospital .come_to p {
+    font-size: 15px;
   }
 }
 @media (max-width: 765px) {
@@ -1111,18 +1123,19 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
     font-size: 16px;
   }
   .come_to_hospital .come_to {
-    margin-top: 10px !important;
-    display: block !important;
+    margin-top: 10px;
+    display: block;
   }
   .come_to_hospital .come_to img {
-    width: 100% !important;
+    width: 100%;
   }
   .come_to_hospital .come_to p {
-    margin-top: 10px !important;
-    font-size: 14px !important;
+    margin-top: 10px;
+    font-size: 14px;
   }
 }
 .search_area {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1210,30 +1223,30 @@ footer .footer-area .info .image-area a:nth-child(2) img, footer .footer-area .i
 
 @media (max-width: 765px) {
   .search_area .contents_area {
-    width: 300px !important;
+    width: 300px;
   }
-  .search_area .close_btn_area {
+  .search_area .contents_area .close_btn_area {
     right: 0;
-    top: -30px !important;
-    font-size: 20px !important;
+    top: -30px;
+    font-size: 20px;
   }
-  .search_area .search {
-    width: 300px !important;
+  .search_area .contents_area .search {
+    width: 300px;
   }
-  .search_area .search input[type=text] {
-    background-size: 20px !important;
-    padding: 6px !important;
-    font-size: 18px !important;
-    padding-left: 30px !important;
+  .search_area .contents_area .search input[type=text] {
+    background-size: 20px;
+    padding: 6px;
+    font-size: 18px;
+    padding-left: 30px;
   }
-  .search_area .tag_area {
-    width: 300px !important;
-    margin-top: 20px !important;
+  .search_area .contents_area .tag_area {
+    width: 300px;
+    margin-top: 20px;
   }
-  .search_area .tag_area a {
+  .search_area .contents_area .tag_area a {
     background-color: #fff;
     padding: 3px 20px;
     border-radius: 20px;
-    font-size: 13px !important;
+    font-size: 13px;
   }
 }
